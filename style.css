@@ -1,0 +1,67 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(196, 196, 196, 0.329);
+  font-family: "Franklin Gothic";
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1200px;
+  height: 500px;
+}
+
+.container > .card {
+  position: relative;
+  flex: 1 1 auto;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 2rem;
+  background-position: center;
+  background-size: cover;
+  outline: none;
+  overflow: hidden;
+  border: none;
+  filter: brightness(0.5);
+  transition: flex 0.8s, filter 1s;
+}
+
+.container > .card > h2,
+.container > .card > p {
+  position: absolute;
+  color: #f1f1f1;
+  transition: bottom 1s;
+  bottom: -5rem;
+  left: 20%;
+}
+
+.container > .card:hover {
+  flex: 8;
+  filter: brightness(1);
+}
+
+.container > .card:hover h2 {
+  bottom: 5rem;
+}
+
+.container > .card:hover p {
+  bottom: 3.5rem;
+}
+
+.card1 {
+  background-image: url("img/Gta.jpg");
+}
+.card2 {
+  background-image: url("img/Cod.jpg");
+}
+.card3 {
+  background-image: url("img/sniperElite.jpg");
+}
+.card4 {
+  background-image: url("img/Fc25.jpg");
+}
